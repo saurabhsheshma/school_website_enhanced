@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+          content="Contact Shekhawati International Academy, Losal, Sikar, Rajasthan, for school and admission inquiries.">
+
+    <title>Contact Us | SIA Losal</title>
+
+    <style>
+        /* 1. Common page settings */
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f7fb;
+            color: #333;
+            margin: 0;
+            line-height: 1.6;
+        }
+
+        /* 2. School logo */
+        .school-header {
+            text-align: center;
+            background-color: white;
+            padding: 15px;
+        }
+
+        .school-logo {
+            width: 180px;
+            max-width: 90%;
+            height: auto;
+        }
+
+        /* 3. Navigation */
+        nav {
+            text-align: center;
+            background-color: #2c3e50;
+            padding: 15px;
+        }
+
+        nav a {
+            display: inline-block;
+            color: white;
+            text-decoration: none;
+            background-color: #3498db;
+            padding: 10px 16px;
+            margin: 5px;
+            border-radius: 5px;
+        }
+
+        nav a:hover {
+            background-color: #217dbb;
+        }
+
+        nav a:focus-visible,
+        .contact-card a:focus-visible,
+        .map-link:focus-visible {
+            outline: 3px solid #f1c40f;
+            outline-offset: 3px;
+        }
+
+        /* 4. Main heading */
+        .page-heading {
+            text-align: center;
+            background-color: #eaf4fc;
+            padding: 35px 15px;
+        }
+
+        .page-heading h1 {
+            color: #2c3e50;
+            margin: 0 0 10px;
+        }
+
+        .page-heading p {
+            margin: 0;
+            color: #555;
+        }
+
+        /* 5. Main content area */
+        main {
+            width: 90%;
+            max-width: 1000px;
+            margin: 30px auto;
+        }
+
+        .section-heading {
+            text-align: center;
+            color: #2c3e50;
+            margin-bottom: 25px;
+        }
+
+        /* 6. Contact information cards */
+        .contact-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+            margin-bottom: 35px;
+        }
+
+        .contact-card {
+            background-color: white;
+            flex: 1 1 250px;
+            padding: 25px;
+            border-radius: 10px;
+            text-align: center;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+            overflow-wrap: anywhere;
+        }
+
+        .contact-card h3 {
+            color: #2980b9;
+            margin-top: 0;
+        }
+
+        .contact-card p {
+            margin-bottom: 10px;
+        }
+
+        .contact-card a {
+            color: #216a9b;
+            text-decoration: none;
+        }
+
+        .contact-card a:hover {
+            text-decoration: underline;
+        }
+
+        /* 7. Contact form */
+        .form-container {
+            background-color: white;
+            padding: 25px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+            max-width: 700px;
+            margin: 0 auto 35px;
+        }
+
+        .form-container h2 {
+            text-align: center;
+            color: #2c3e50;
+        }
+
+        .form-container label {
+            display: block;
+            font-weight: bold;
+            margin-top: 15px;
+        }
+
+        .form-container input,
+        .form-container select,
+        .form-container textarea {
+            width: 100%;
+            padding: 12px;
+            margin-top: 6px;
+            border: 1px solid #bbb;
+            border-radius: 5px;
+            font: inherit;
+        }
+
+        .form-container input:focus,
+        .form-container select:focus,
+        .form-container textarea:focus {
+            outline: 2px solid #3498db;
+            border-color: #3498db;
+        }
+
+        .form-container textarea {
+            min-height: 120px;
+            resize: vertical;
+        }
+
+        .submit-button {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 12px 22px;
+            border: none;
+            border-radius: 5px;
+            background-color: #2980b9;
+            color: white;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        .submit-button:hover {
+            background-color: #216a9b;
+        }
+
+        .form-note {
+            font-size: 14px;
+            color: #666;
+        }
+
+        /* 8. Location section */
+        .location-section {
+            background-color: white;
+            padding: 25px;
+            text-align: center;
+            border-radius: 10px;
+            margin-bottom: 35px;
+        }
+
+        .location-section h2 {
+            color: #2c3e50;
+        }
+
+        .map-link {
+            display: inline-block;
+            background-color: #27ae60;
+            color: white;
+            text-decoration: none;
+            padding: 12px 20px;
+            border-radius: 5px;
+            margin-top: 10px;
+        }
+
+        .map-link:hover {
+            background-color: #1e8449;
+        }
+
+        /* 9. Footer */
+        footer {
+            text-align: center;
+            background-color: #1d2b38;
+            color: white;
+            padding: 20px;
+        }
+
+        footer p {
+            margin: 5px;
+        }
+
+        footer a {
+            color: #aedcff;
+            text-decoration: none;
+        }
+
+        /* 10. Small-screen adjustments */
+        @media (max-width: 600px) {
+            nav a {
+                display: block;
+                margin: 8px auto;
+                max-width: 220px;
+            }
+
+            main {
+                width: 92%;
+            }
+
+            .page-heading {
+                padding: 25px 12px;
+            }
+
+            .contact-card,
+            .form-container,
+            .location-section {
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- School Logo -->
+    <header class="school-header">
+        <img
+            src="/images/sialogo.webp"
+            alt="Shekhawati International Academy School Logo"
+            class="school-logo"
+        >
+    </header>
+
+    <!-- Main Navigation -->
+    <nav aria-label="Main navigation">
+        <a href="index.html">Home</a>
+        <a href="courses.html">Our Courses</a>
+        <a href="about.html">About Us</a>
+        <a href="contact.html" aria-current="page">Contact Us</a>
+    </nav>
+
+    <!-- Page Introduction -->
+    <header class="page-heading">
+        <h1>Contact Us</h1>
+        <p>
+            Shekhawati International Academy, Losal
+        </p>
+        <p>
+            We welcome students, parents and admission inquiries.
+        </p>
+    </header>
+
+    <main>
+
+        <!-- Contact Information -->
+        <section aria-labelledby="contact-details">
+            <h2 class="section-heading" id="contact-details">
+                Get in Touch With Us
+            </h2>
+
+            <div class="contact-container">
+
+                <!-- Address Card -->
+                <article class="contact-card">
+                    <h3>Our Address</h3>
+                    <p>
+                        Shekhawati International Academy<br>
+                        Sikar Road, Losal<br>
+                        Sikar, Rajasthan - 332025
+                    </p>
+                </article>
+
+                <!-- Phone Card -->
+                <article class="contact-card">
+                    <h3>Call Us</h3>
+                    <p>For school-related inquiries:</p>
+                    <p>
+                        <a href="tel:+919462018570">
+                            +91 9462018570
+                        </a>
+                    </p>
+                </article>
+
+                <!-- Email Card -->
+                <article class="contact-card">
+                    <h3>Email Us</h3>
+                    <p>Send us your questions:</p>
+                    <p>
+                        <a href="mailto:admin@shekhawatilosal.com">
+                            admin@shekhawatilosal.com
+                        </a>
+                    </p>
+                </article>
+
+            </div>
+        </section>
+
+        <!-- Inquiry Form -->
+        <section class="form-container" aria-labelledby="inquiry-heading">
+
+            <h2 id="inquiry-heading">Student & Parent Inquiry</h2>
+
+            <p>
+                Have a question about admissions or classes?
+                You can prepare your inquiry using the form below.
+            </p>
+
+            <form action="mailto:admin@shekhawatilosal.com"
+                  method="post"
+                  enctype="text/plain">
+
+                <label for="name">Full Name *</label>
+                <input
+                    type="text"
+                    id="name"
+                    name="Full Name"
+                    placeholder="Enter your full name"
+                    autocomplete="name"
+                    required
+                >
+
+                <label for="email">Email Address *</label>
+                <input
+                    type="email"
+                    id="email"
+                    name="Email"
+                    placeholder="Enter your email address"
+                    autocomplete="email"
+                    required
+                >
+
+                <label for="phone">Phone Number</label>
+                <input
+                    type="tel"
+                    id="phone"
+                    name="Phone"
+                    placeholder="Enter your phone number"
+                    autocomplete="tel"
+                >
+
+                <label for="class">Class of Interest</label>
+                <select id="class" name="Class of Interest">
+                    <option value="">Select a class</option>
+                    <option>Nursery - UKG</option>
+                    <option>Class 1 - 5</option>
+                    <option>Class 6 - 8</option>
+                    <option>Class 9 - 10</option>
+                    <option>Class 11 - 12</option>
+                </select>
+
+                <label for="message">Your Message *</label>
+                <textarea
+                    id="message"
+                    name="Message"
+                    placeholder="Write your question here..."
+                    required
+                ></textarea>
+
+                <button type="submit" class="submit-button">
+                    Prepare Inquiry
+                </button>
+
+                <p class="form-note">
+                    Note: This basic HTML form uses your email application.
+                    It does not save submissions to a school database.
+                    Email application support may vary by device.
+                </p>
+
+            </form>
+        </section>
+
+        <!-- School Location -->
+        <section class="location-section" aria-labelledby="location-heading">
+
+            <h2 id="location-heading">Visit Our School</h2>
+
+            <p>
+                Shekhawati International Academy<br>
+                Sikar Road, Losal, Sikar, Rajasthan - 332025
+            </p>
+
+            <a
+                class="map-link"
+                href="https://www.google.com/maps/search/?api=1&amp;query=Shekhawati+International+Academy+Sikar+Road+Losal+Sikar+Rajasthan"
+                target="_blank"
+                rel="noopener noreferrer"
+            >
+                Find Us on Google Maps
+            </a>
+
+            <p class="form-note">
+                Please contact the school to confirm visiting hours.
+            </p>
+
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>
+            &copy; 2026 Shekhawati International Academy, Losal.
+        </p>
+
+        <p>
+            <a href="index.html">Home</a> |
+            <a href="courses.html">Courses</a> |
+            <a href="about.html">About Us</a>
+        </p>
+
+        <p>
+            <a href="https://shekhawatilosal.com/contact-us"
+               target="_blank"
+               rel="noopener noreferrer">
+                Official School Website
+            </a>
+        </p>
+    </footer>
+
+</body>
+</html>

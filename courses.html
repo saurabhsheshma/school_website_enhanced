@@ -1,0 +1,203 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Courses | SIA Losal</title>
+
+    <style>
+        /* 1. Whole page */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f7fb;
+            margin: 0;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        /* 2. School logo section */
+        .school-logo {
+            text-align: center;
+            background-color: white;
+            padding: 15px;
+        }
+
+        .school-logo img {
+            width: 350px;
+            max-width: 90%;
+            height: auto;
+        }
+
+        /* 3. Main heading */
+        h1 {
+            text-align: center;
+            color: #2c3e50;
+            margin: 30px 15px 10px;
+        }
+
+        /* 4. Introductory text */
+        .intro {
+            text-align: center;
+            margin: 0 15px 25px;
+            color: #555;
+        }
+
+        /* 5. Table container for small screens */
+        .table-container {
+            width: 90%;
+            max-width: 900px;
+            margin: 0 auto 30px;
+            overflow-x: auto;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        /* 6. Courses table */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            background-color: white;
+        }
+
+        caption {
+            caption-side: top;
+            font-size: 22px;
+            font-weight: bold;
+            color: #2c3e50;
+            padding: 15px;
+        }
+
+        th {
+            background-color: #3498db;
+            color: white;
+            padding: 14px;
+            text-align: left;
+        }
+
+        td {
+            padding: 14px;
+            border-bottom: 1px solid #ddd;
+            text-align: left;
+        }
+
+        tbody tr:nth-child(even) {
+            background-color: #f2f8fc;
+        }
+
+        tbody tr:hover {
+            background-color: #dff0ff;
+        }
+
+        /* 7. Navigation links */
+        nav {
+            text-align: center;
+            padding: 20px;
+            background-color: #2c3e50;
+        }
+
+        nav a {
+            display: inline-block;
+            color: white;
+            text-decoration: none;
+            background-color: #3498db;
+            padding: 10px 18px;
+            margin: 5px;
+            border-radius: 5px;
+        }
+
+        nav a:hover {
+            background-color: #217dbb;
+        }
+
+        /* 8. Keyboard accessibility */
+        nav a:focus-visible {
+            outline: 3px solid #ffdb70;
+            outline-offset: 3px;
+        }
+
+        /* 9. Footer */
+        footer {
+            text-align: center;
+            padding: 12px;
+            color: white;
+            background-color: #1d2b38;
+        }
+
+        footer p {
+            margin: 0;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- School Logo -->
+    <div class="school-logo">
+        <img
+            src="/images/school_fullinfologo.webp"
+            alt="Shekhawati International Academy Logo"
+        >
+    </div>
+
+    <!-- Main Heading -->
+    <header>
+        <h1>Our Courses</h1>
+        <p class="intro">
+            Explore the classes and subjects offered at SIA Losal.
+        </p>
+    </header>
+
+    <!-- Courses Table -->
+    <main>
+        <div class="table-container">
+            <table>
+                <caption>Classes and Subjects</caption>
+
+                <thead>
+                    <tr>
+                        <th scope="col">Class</th>
+                        <th scope="col">Subjects / Streams</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td>Classes 1–5</td>
+                        <td>English, Hindi, Mathematics, EVS</td>
+                    </tr>
+
+                    <tr>
+                        <td>Classes 6–8</td>
+                        <td>English, Hindi, Mathematics, Social Science, Science</td>
+                    </tr>
+
+                    <tr>
+                        <td>Classes 9–10</td>
+                        <td>English, Hindi, Mathematics, Social Science, Science</td>
+                    </tr>
+
+                    <tr>
+                        <td>Classes 11–12</td>
+                        <td>Science, Commerce, Arts</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </main>
+
+    <!-- Navigation -->
+    <nav aria-label="Main navigation">
+        <a href="index.html">Home</a>
+        <a href="about.html">About Us</a>
+        <a href="contact.html">Contact Us</a>
+    </nav>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; SIA Losal. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
