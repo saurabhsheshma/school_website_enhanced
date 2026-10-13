@@ -18,7 +18,7 @@
 
         body {
             font-family: Arial, sans-serif;
-            background-color: #f4f7fb;
+            background-color: azure;
             color: #333;
             margin: 0;
             line-height: 1.6;
@@ -27,7 +27,7 @@
         /* 2. School logo */
         .school-header {
             text-align: center;
-            background-color: white;
+            background-color: azure;
             padding: 15px;
         }
 
@@ -37,43 +37,47 @@
             height: auto;
         }
 
-        /* 3. Navigation */
+        /* 3. Navigation - Index theme */
         nav {
             text-align: center;
-            background-color: #2c3e50;
+            background-color: azure;
             padding: 15px;
         }
 
         nav a {
             display: inline-block;
-            color: white;
+            color: brown;
             text-decoration: none;
-            background-color: #3498db;
+            background-color: azure;
             padding: 10px 16px;
             margin: 5px;
+            border: 1px solid brown;
             border-radius: 5px;
+            font-weight: bold;
         }
 
         nav a:hover {
-            background-color: #217dbb;
+            background-color: brown;
+            color: white;
         }
 
         nav a:focus-visible,
         .contact-card a:focus-visible,
-        .map-link:focus-visible {
-            outline: 3px solid #f1c40f;
+        .map-link:focus-visible,
+        .submit-button:focus-visible {
+            outline: 3px solid brown;
             outline-offset: 3px;
         }
 
         /* 4. Main heading */
         .page-heading {
             text-align: center;
-            background-color: #eaf4fc;
+            background-color: azure;
             padding: 35px 15px;
         }
 
         .page-heading h1 {
-            color: #2c3e50;
+            color: brown;
             margin: 0 0 10px;
         }
 
@@ -91,7 +95,7 @@
 
         .section-heading {
             text-align: center;
-            color: #2c3e50;
+            color: brown;
             margin-bottom: 25px;
         }
 
@@ -115,7 +119,7 @@
         }
 
         .contact-card h3 {
-            color: #2980b9;
+            color: brown;
             margin-top: 0;
         }
 
@@ -124,7 +128,7 @@
         }
 
         .contact-card a {
-            color: #216a9b;
+            color: brown;
             text-decoration: none;
         }
 
@@ -144,7 +148,7 @@
 
         .form-container h2 {
             text-align: center;
-            color: #2c3e50;
+            color: brown;
         }
 
         .form-container label {
@@ -167,8 +171,8 @@
         .form-container input:focus,
         .form-container select:focus,
         .form-container textarea:focus {
-            outline: 2px solid #3498db;
-            border-color: #3498db;
+            outline: 2px solid brown;
+            border-color: brown;
         }
 
         .form-container textarea {
@@ -180,16 +184,16 @@
             display: inline-block;
             margin-top: 20px;
             padding: 12px 22px;
-            border: none;
+            border: 1px solid brown;
             border-radius: 5px;
-            background-color: #2980b9;
+            background-color: brown;
             color: white;
             font-size: 16px;
             cursor: pointer;
         }
 
         .submit-button:hover {
-            background-color: #216a9b;
+            background-color: #632a17;
         }
 
         .form-note {
@@ -207,12 +211,12 @@
         }
 
         .location-section h2 {
-            color: #2c3e50;
+            color: brown;
         }
 
         .map-link {
             display: inline-block;
-            background-color: #27ae60;
+            background-color: brown;
             color: white;
             text-decoration: none;
             padding: 12px 20px;
@@ -221,13 +225,13 @@
         }
 
         .map-link:hover {
-            background-color: #1e8449;
+            background-color: #632a17;
         }
 
-        /* 9. Footer */
+        /* 9. Footer - Index theme */
         footer {
             text-align: center;
-            background-color: #1d2b38;
+            background-color: brown;
             color: white;
             padding: 20px;
         }
@@ -237,8 +241,12 @@
         }
 
         footer a {
-            color: #aedcff;
+            color: white;
             text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
         }
 
         /* 10. Small-screen adjustments */
