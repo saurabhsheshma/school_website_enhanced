@@ -3,109 +3,198 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>SIA Losal | Welcome</title>
-
-    <style>
-        /* 1. Common page settings */
-        body {
-            background-color: azure;
-            margin: 0;
-            min-height: 100vh;
-            display: flex;
-            flex-direction: column;
-            font-family: Arial, sans-serif;
-        }
-
-        /* 2. Main heading */
-        h1 {
-            text-align: center;
-            color: brown;
-        }
-
-        /* 3. Header section */
-        header {
-            text-align: center;
-            padding: 20px;
-        }
-
-        /* 4. School logo */
-        .school-logo {
-            display: block;
-            width: 150px;
-            max-width: 80%;
-            height: auto;
-            margin: 20px auto;
-        }
-
-        /* 5. Navigation links */
-        nav {
-            text-align: center;
-            margin: 20px 0;
-        }
-
-        nav a {
-            display: inline-block;
-            color: brown;
-            text-decoration: none;
-            font-weight: bold;
-            margin: 10px;
-            padding: 10px 15px;
-            border: 1px solid brown;
-            border-radius: 5px;
-        }
-
-        /* 6. Main content */
-        main {
-            text-align: center;
-            padding: 20px;
-        }
-
-        /* 7. Footer */
-        footer {
-            margin-top: auto;
-            text-align: center;
-            padding: 20px;
-            background-color: brown;
-        }
-
-        footer a {
-            color: white;
-            text-decoration: none;
-        }
-    </style>
+    <meta name="description" content="Discover Shekhawati International Academy in Losal, Sikar: a CBSE school founded in 2008, with classes from Nursery to XII.">
+    <title>Shekhawati International Academy | Losal, Sikar</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
 </head>
-
 <body>
-
-    <header>
-        <h1>Welcome to SIA Losal</h1>
-
-        <img
-            src="/images/sialogo.webp"
-            alt="SIA Losal School Logo"
-            class="school-logo"
-        >
-
-        <nav>
-            <a href="index.html">Home</a>
-            <a href="courses.html">Our Courses</a>
-            <a href="about.html">About Us</a>
-        </nav>
+    <a class="skip-link" href="#main-content">Skip to content</a>
+    <header class="site-header">
+        <div class="header-inner">
+            <a class="brand" href="index.html" aria-label="Shekhawati International Academy home">
+                <img class="school-logo" src="images/sialogo.webp" alt="">
+                <span>
+                    <span class="brand-name">Shekhawati International Academy</span>
+                    <span class="brand-location">Losal, Sikar, Rajasthan</span>
+                </span>
+            </a>
+            <nav class="site-nav" aria-label="Main navigation">
+                <a href="index.html" aria-current="page">Home</a>
+                <a href="about.html">About</a>
+                <a href="courses.html">Academics</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+        </div>
     </header>
 
-    <main>
-        <h2>Learn, Grow and Succeed</h2>
-        <p>
-            Welcome to SIA Losal!
-            Explore our courses and learn more about our school.
-        </p>
+    <main id="main-content">
+        <section class="hero content-width" aria-labelledby="welcome-heading">
+            <div class="hero-copy">
+                <p class="eyebrow">Founded in 2008 · Losal, Rajasthan</p>
+                <h1 id="welcome-heading">Knowledge. Strength. Compassion.</h1>
+                <p>
+                    A school community where curiosity leads to learning.
+                    Shekhawati International Academy brings practical and
+                    academic learning together, grounded in cultural values.
+                </p>
+                <div class="actions">
+                    <a class="button" href="courses.html">Explore academics</a>
+                    <a class="button button-secondary" href="about.html">Discover SIA</a>
+                </div>
+            </div>
+            <div class="image-carousel" data-carousel aria-label="Photos from the SIA campus">
+                <figure class="hero-figure carousel-slide" data-slide>
+                    <img
+                        class="hero-image"
+                        src="images/sia-campus-aerial.png"
+                        alt="Aerial view of the Shekhawati International Academy campus and grounds in Losal"
+                        fetchpriority="high"
+                    >
+                    <figcaption>Shekhawati International Academy campus, Losal</figcaption>
+                </figure>
+                <figure class="hero-figure carousel-slide" data-slide hidden>
+                    <img
+                        class="hero-image"
+                        src="images/sia-campus-building.jpg"
+                        alt="The Shekhawati International Academy school building in Losal"
+                    >
+                    <figcaption>The SIA school building. Photo: official school website.</figcaption>
+                </figure>
+                <figure class="hero-figure carousel-slide" data-slide hidden>
+                    <img
+                        class="hero-image"
+                        src="images/sia-student-project.jpg"
+                        alt="Students gathered around a model during a school project activity"
+                    >
+                    <figcaption>Students at a project activity. Photo: official school website.</figcaption>
+                </figure>
+                <div class="carousel-controls" aria-label="Photo slideshow controls">
+                    <button class="carousel-control" type="button" data-previous aria-label="Show previous photo">Previous</button>
+                    <div class="carousel-dots" data-slide-buttons aria-label="Choose a photo"></div>
+                    <button class="carousel-control" type="button" data-next aria-label="Show next photo">Next</button>
+                    <button class="carousel-control carousel-toggle" type="button" data-toggle aria-pressed="false">Pause slideshow</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="content-width facts" aria-label="School overview">
+            <div class="fact">
+                <strong>Since 2008</strong>
+                <span>Serving learners in Losal</span>
+            </div>
+            <div class="fact">
+                <strong>Nursery to XII</strong>
+                <span>Early years through senior secondary</span>
+            </div>
+            <div class="fact">
+                <strong>CBSE</strong>
+                <span>Secondary and senior secondary examinations</span>
+            </div>
+        </section>
+
+        <section class="section" aria-labelledby="school-updates-heading">
+            <div class="content-width">
+                <div class="section-heading">
+                    <p class="eyebrow">From the school website</p>
+                    <h2 id="school-updates-heading">Updates and achievements.</h2>
+                    <p>Highlights published by SIA. Select a topic or search the updates to find what interests you.</p>
+                </div>
+                <div class="update-tools">
+                    <div class="update-filters" role="group" aria-label="Filter school updates">
+                        <button class="filter-button is-active" type="button" data-filter="all" aria-pressed="true">All updates</button>
+                        <button class="filter-button" type="button" data-filter="admissions" aria-pressed="false">Admissions</button>
+                        <button class="filter-button" type="button" data-filter="sports" aria-pressed="false">Sports</button>
+                        <button class="filter-button" type="button" data-filter="community" aria-pressed="false">Community</button>
+                    </div>
+                    <label class="update-search-label" for="update-search">Search updates</label>
+                    <input id="update-search" class="update-search" type="search" placeholder="Try “scholarship” or “sports”">
+                </div>
+                <div class="card-grid update-grid" data-updates>
+                    <article class="card update-card" data-category="admissions" data-search="pre-admission scholarship exam score 26 registration">
+                        <span class="card-label">Admissions</span>
+                        <h3>Pre-Admission Scholarship Exam: Score-26</h3>
+                        <p>The school website lists registration details for its pre-admission scholarship exam.</p>
+                        <a class="text-link" href="https://erpsys.spslosal.com/site/scholarship/AG11" target="_blank" rel="noopener noreferrer">View registration details</a>
+                    </article>
+                    <article class="card update-card" data-category="sports" data-search="68th district level sports tournament 2024">
+                        <span class="card-label">Sports</span>
+                        <h3>68th District Level Sports Tournament</h3>
+                        <p>SIA highlights its participation in the 68th District Level Sports Tournament 2024.</p>
+                        <a class="text-link" href="https://shekhawatilosal.com" target="_blank" rel="noopener noreferrer">Read school updates</a>
+                    </article>
+                    <article class="card update-card" data-category="community" data-search="save human life cpr training jain cpr centre sikar">
+                        <span class="card-label">Community</span>
+                        <h3>CPR training with Jain CPR Centre</h3>
+                        <p>The official school site features CPR training by Jain CPR Centre, Sikar.</p>
+                        <a class="text-link" href="https://shekhawatilosal.com" target="_blank" rel="noopener noreferrer">Read school updates</a>
+                    </article>
+                    <article class="card update-card" data-category="sports" data-search="19th national taekwondo championship competition winners">
+                        <span class="card-label">Sports</span>
+                        <h3>National Taekwondo Championship</h3>
+                        <p>SIA also shares news about winners of the 19th National Taekwondo Championship Competition.</p>
+                        <a class="text-link" href="https://shekhawatilosal.com" target="_blank" rel="noopener noreferrer">Read school updates</a>
+                    </article>
+                </div>
+                <p class="update-empty" data-empty hidden>No updates match your search. Try another word or choose “All updates.”</p>
+                <p class="update-note">School announcements can change; visit the official SIA website for the latest information.</p>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="content-width story-grid">
+                <figure class="story-figure">
+                    <img
+                        class="story-image"
+                        src="images/sia-campus-building.jpg"
+                        alt="The Shekhawati International Academy school building in Losal"
+                        loading="lazy"
+                    >
+                    <figcaption>Campus photograph from the official SIA website.</figcaption>
+                </figure>
+                <div class="story-copy">
+                    <p class="eyebrow">A place to grow</p>
+                    <h2>Learning for life, rooted in values.</h2>
+                    <p>
+                        SIA describes its approach as a balance of practical
+                        and theoretical teaching. Its stated aim is to help
+                        students seek knowledge with curiosity, while academic
+                        learning and extracurricular activities support
+                        broader development.
+                    </p>
+                    <a class="button button-secondary" href="about.html">Read about SIA</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="section section-alt">
+            <div class="content-width story-copy">
+                <p class="eyebrow">Senior secondary</p>
+                <h2>Find your next direction.</h2>
+                <p>
+                    SIA lists Science and Humanities as its two streams at the
+                    +2 level. Learn more about the school's academic stages
+                    and contact the school directly for current subject and
+                    admission details.
+                </p>
+                <div class="actions">
+                    <a class="button" href="courses.html">View academic stages</a>
+                    <a class="button button-secondary" href="contact.html">Contact the school</a>
+                </div>
+            </div>
+        </section>
     </main>
 
-    <footer>
-        <a href="contact.html">Contact Us</a>
-        <p style="color: white;">&copy; SIA Losal. All rights reserved.</p>
+    <footer class="site-footer">
+        <div class="footer-inner">
+            <p>&copy; <span data-current-year>2026</span> Shekhawati International Academy, Losal.</p>
+            <div class="footer-links">
+                <a href="about.html">About</a>
+                <a href="courses.html">Academics</a>
+                <a href="contact.html">Contact</a>
+                <a class="external-source" href="https://shekhawatilosal.com" target="_blank" rel="noopener noreferrer">Official SIA website</a>
+            </div>
+        </div>
     </footer>
-
 </body>
 </html>

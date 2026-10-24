@@ -3,233 +3,111 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>Courses | SIA Losal</title>
-
-    <style>
-        /* 1. Whole page */
-        * {
-            box-sizing: border-box;
-        }
-
-        body {
-            font-family: Arial, sans-serif;
-            background-color: azure;
-            margin: 0;
-            color: #333;
-            line-height: 1.6;
-        }
-
-        /* 2. School logo section */
-        .school-logo {
-            text-align: center;
-            background-color: azure;
-            padding: 15px;
-        }
-
-        .school-logo img {
-            width: 350px;
-            max-width: 90%;
-            height: auto;
-        }
-
-        /* 3. Main heading */
-        h1 {
-            text-align: center;
-            color: brown;
-            margin: 30px 15px 10px;
-        }
-
-        /* 4. Introductory text */
-        .intro {
-            text-align: center;
-            margin: 0 15px 25px;
-            color: #555;
-        }
-
-        /* 5. Table container for small screens */
-        .table-container {
-            width: 90%;
-            max-width: 900px;
-            margin: 0 auto 30px;
-            overflow-x: auto;
-            border-radius: 8px;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-        }
-
-        /* 6. Courses table */
-        table {
-            width: 100%;
-            border-collapse: collapse;
-            background-color: white;
-        }
-
-        caption {
-            caption-side: top;
-            font-size: 22px;
-            font-weight: bold;
-            color: brown;
-            padding: 15px;
-        }
-
-        th {
-            background-color: brown;
-            color: white;
-            padding: 14px;
-            text-align: left;
-        }
-
-        td {
-            padding: 14px;
-            border-bottom: 1px solid #ddd;
-            text-align: left;
-        }
-
-        tbody tr:nth-child(even) {
-            background-color: azure;
-        }
-
-        tbody tr:hover {
-            background-color: #f0e0d8;
-        }
-
-        /* 7. Navigation links - Index theme */
-        nav {
-            text-align: center;
-            padding: 20px;
-            background-color: azure;
-        }
-
-        nav a {
-            display: inline-block;
-            color: brown;
-            text-decoration: none;
-            background-color: azure;
-            padding: 10px 18px;
-            margin: 5px;
-            border: 1px solid brown;
-            border-radius: 5px;
-            font-weight: bold;
-        }
-
-        nav a:hover {
-            background-color: brown;
-            color: white;
-        }
-
-        /* 8. Keyboard accessibility */
-        nav a:focus-visible {
-            outline: 3px solid brown;
-            outline-offset: 3px;
-        }
-
-        /* 9. Footer - Index theme */
-        footer {
-            text-align: center;
-            padding: 20px;
-            color: white;
-            background-color: brown;
-        }
-
-        footer p {
-            margin: 0;
-        }
-
-        /* 10. Mobile responsive design */
-        @media (max-width: 600px) {
-            nav a {
-                display: block;
-                max-width: 220px;
-                margin: 8px auto;
-            }
-
-            .table-container {
-                width: 92%;
-            }
-
-            th,
-            td {
-                padding: 10px;
-            }
-
-            caption {
-                font-size: 20px;
-            }
-
-            h1 {
-                font-size: 28px;
-            }
-        }
-    </style>
+    <meta name="description" content="Explore the academic stages at Shekhawati International Academy, a CBSE-affiliated school in Losal with classes from Nursery to XII.">
+    <title>Academics | Shekhawati International Academy</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
 </head>
-
 <body>
-
-    <!-- School Logo -->
-    <div class="school-logo">
-        <img
-            src="/images/school_fullinfologo.webp"
-            alt="Shekhawati International Academy Logo"
-        >
-    </div>
-
-    <!-- Main Heading -->
-    <header>
-        <h1>Our Courses</h1>
-        <p class="intro">
-            Explore the classes and subjects offered at SIA Losal.
-        </p>
+    <a class="skip-link" href="#main-content">Skip to content</a>
+    <header class="site-header">
+        <div class="header-inner">
+            <a class="brand" href="index.html" aria-label="Shekhawati International Academy home">
+                <img class="school-logo" src="images/sialogo.webp" alt="">
+                <span>
+                    <span class="brand-name">Shekhawati International Academy</span>
+                    <span class="brand-location">Losal, Sikar, Rajasthan</span>
+                </span>
+            </a>
+            <nav class="site-nav" aria-label="Main navigation">
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="courses.html" aria-current="page">Academics</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+        </div>
     </header>
 
-    <!-- Courses Table -->
-    <main>
-        <div class="table-container">
-            <table>
-                <caption>Classes and Subjects</caption>
+    <main id="main-content">
+        <header class="page-intro">
+            <div class="content-width">
+                <p class="eyebrow">Academics at SIA</p>
+                <h1>From first steps to senior secondary.</h1>
+                <p>
+                    The official school website lists classes from Nursery to
+                    XII, with Science and Humanities streams at the +2 level.
+                </p>
+            </div>
+        </header>
 
-                <thead>
-                    <tr>
-                        <th scope="col">Class</th>
-                        <th scope="col">Subjects / Streams</th>
-                    </tr>
-                </thead>
+        <section class="section">
+            <div class="content-width">
+                <div class="section-heading">
+                    <p class="eyebrow">Learning journey</p>
+                    <h2>Learning that grows with students.</h2>
+                    <p>
+                        These stages summarize the school's published class
+                        range. Contact SIA for the latest class, subject,
+                        timetable, and admission details.
+                    </p>
+                </div>
+                <div class="card-grid">
+                    <article class="card">
+                        <span class="card-label">Nursery to XII</span>
+                        <h3>School education</h3>
+                        <p>SIA provides schooling from Nursery through Class XII.</p>
+                    </article>
+                    <article class="card">
+                        <span class="card-label">Secondary</span>
+                        <h3>All India Secondary Examination</h3>
+                        <p>The school is affiliated with CBSE for its Secondary Examination.</p>
+                    </article>
+                    <article class="card">
+                        <span class="card-label">Senior secondary · +2</span>
+                        <h3>Science and Humanities</h3>
+                        <p>The school lists Science and Humanities as its two streams at the +2 level.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
 
-                <tbody>
-                    <tr>
-                        <td>Classes 1–5</td>
-                        <td>English, Hindi, Mathematics, EVS</td>
-                    </tr>
-
-                    <tr>
-                        <td>Classes 6–8</td>
-                        <td>English, Hindi, Mathematics, Social Science, Science</td>
-                    </tr>
-
-                    <tr>
-                        <td>Classes 9–10</td>
-                        <td>English, Hindi, Mathematics, Social Science, Science</td>
-                    </tr>
-
-                    <tr>
-                        <td>Classes 11–12</td>
-                        <td>Science, Commerce, Arts</td>
-                    </tr>
-                </tbody>
-            </table>
-        </div>
+        <section class="section section-alt">
+            <div class="content-width story-grid">
+                <div class="story-copy">
+                    <p class="eyebrow">A balanced approach</p>
+                    <h2>Practical and academic learning.</h2>
+                    <p>
+                        SIA describes its teaching as a balance of practical
+                        and theoretical learning, supported by
+                        extracurricular activities and a value-based approach.
+                        For current subject combinations and class-specific
+                        information, check with the school directly.
+                    </p>
+                    <a class="button" href="contact.html">Ask the school</a>
+                </div>
+                <figure class="story-figure">
+                    <img
+                        class="story-image"
+                        src="images/sia-campus-aerial.png"
+                        alt="Shekhawati International Academy campus, Losal"
+                        loading="lazy"
+                    >
+                    <figcaption>Campus in Losal. Photo: official SIA website.</figcaption>
+                </figure>
+            </div>
+        </section>
     </main>
 
-    <!-- Navigation -->
-    <nav aria-label="Main navigation">
-        <a href="index.html">Home</a>
-        <a href="about.html">About Us</a>
-        <a href="contact.html">Contact Us</a>
-    </nav>
-
-    <!-- Footer -->
-    <footer>
-        <p>&copy; SIA Losal. All rights reserved.</p>
+    <footer class="site-footer">
+        <div class="footer-inner">
+            <p>&copy; <span data-current-year>2026</span> Shekhawati International Academy, Losal.</p>
+            <div class="footer-links">
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="contact.html">Contact</a>
+                <a class="external-source" href="https://shekhawatilosal.com/pages/about-us" target="_blank" rel="noopener noreferrer">Official school information</a>
+            </div>
+        </div>
     </footer>
-
 </body>
 </html>

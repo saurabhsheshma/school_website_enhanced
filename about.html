@@ -1,421 +1,127 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <meta name="description"
-          content="Learn about Shekhawati International Academy, Losal, Sikar, Rajasthan.">
-
-    <title>About Us | SIA Losal</title>
-
-    <style>
-        /* 1. Common page settings */
-        * {
-            box-sizing: border-box;
-        }
-
-        body {
-            font-family: Arial, sans-serif;
-            background-color: azure;
-            color: #333;
-            margin: 0;
-            line-height: 1.7;
-        }
-
-        /* 2. School logo */
-        .school-header {
-            background-color: azure;
-            text-align: center;
-            padding: 15px;
-        }
-
-        .school-logo {
-            width: 180px;
-            max-width: 90%;
-            height: auto;
-        }
-
-        /* 3. Navigation bar - Index theme */
-        nav {
-            text-align: center;
-            background-color: azure;
-            padding: 15px;
-        }
-
-        nav a {
-            display: inline-block;
-            background-color: azure;
-            color: brown;
-            text-decoration: none;
-            padding: 10px 16px;
-            margin: 5px;
-            border: 1px solid brown;
-            border-radius: 5px;
-            font-weight: bold;
-        }
-
-        nav a:hover {
-            background-color: brown;
-            color: white;
-        }
-
-        nav a:focus-visible,
-        .learn-more:focus-visible {
-            outline: 3px solid brown;
-            outline-offset: 3px;
-        }
-
-        /* 4. Hero section */
-        .hero {
-            background-color: azure;
-            text-align: center;
-            padding: 45px 20px;
-        }
-
-        .hero h1 {
-            color: brown;
-            font-size: 36px;
-            margin: 0 0 10px;
-        }
-
-        .hero p {
-            color: #555;
-            max-width: 750px;
-            margin: 10px auto;
-        }
-
-        .motto {
-            color: brown;
-            font-weight: bold;
-            font-size: 21px;
-        }
-
-        /* 5. Main content */
-        main {
-            width: 90%;
-            max-width: 1000px;
-            margin: 30px auto;
-        }
-
-        .content-section {
-            background-color: white;
-            padding: 28px;
-            margin-bottom: 25px;
-            border-radius: 10px;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.06);
-        }
-
-        .content-section h2 {
-            color: brown;
-            margin-top: 0;
-        }
-
-        /* 6. Highlights cards */
-        .highlights {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 20px;
-        }
-
-        .highlight-card {
-            flex: 1 1 220px;
-            background-color: azure;
-            padding: 20px;
-            border-left: 4px solid brown;
-            border-radius: 6px;
-        }
-
-        .highlight-card h3 {
-            color: brown;
-            margin-top: 0;
-        }
-
-        /* 7. School information */
-        .school-info {
-            width: 100%;
-            border-collapse: collapse;
-            margin-top: 15px;
-        }
-
-        .school-info th,
-        .school-info td {
-            text-align: left;
-            padding: 12px;
-            border: 1px solid #ddd;
-        }
-
-        .school-info th {
-            width: 35%;
-            background-color: azure;
-            color: brown;
-        }
-
-        /* 8. Call to action */
-        .learn-more {
-            display: inline-block;
-            background-color: azure;
-            color: brown;
-            padding: 12px 20px;
-            margin-top: 10px;
-            border: 1px solid brown;
-            border-radius: 5px;
-            text-decoration: none;
-            font-weight: bold;
-        }
-
-        .learn-more:hover {
-            background-color: brown;
-            color: white;
-        }
-
-        /* 9. Footer - Index theme */
-        footer {
-            background-color: brown;
-            color: white;
-            text-align: center;
-            padding: 20px;
-        }
-
-        footer p {
-            margin: 5px;
-        }
-
-        footer a {
-            color: white;
-            text-decoration: none;
-        }
-
-        footer a:hover {
-            text-decoration: underline;
-        }
-
-        /* 10. Mobile responsive design */
-        @media (max-width: 600px) {
-            nav a {
-                display: block;
-                max-width: 220px;
-                margin: 8px auto;
-            }
-
-            .hero h1 {
-                font-size: 28px;
-            }
-
-            main {
-                width: 92%;
-            }
-
-            .content-section {
-                padding: 20px;
-            }
-
-            .school-info th,
-            .school-info td {
-                padding: 8px;
-            }
-
-            .learn-more {
-                margin: 8px 4px;
-            }
-        }
-    </style>
+    <meta name="description" content="Learn about Shekhawati International Academy in Losal, Sikar: its history, educational approach, motto, and CBSE affiliation.">
+    <title>About SIA | Shekhawati International Academy</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
 </head>
-
 <body>
-
-    <!-- School Logo -->
-    <header class="school-header">
-        <img
-            src="/images/sialogo.webp"
-            alt="Shekhawati International Academy Logo"
-            class="school-logo"
-        >
+    <a class="skip-link" href="#main-content">Skip to content</a>
+    <header class="site-header">
+        <div class="header-inner">
+            <a class="brand" href="index.html" aria-label="Shekhawati International Academy home">
+                <img class="school-logo" src="images/sialogo.webp" alt="">
+                <span>
+                    <span class="brand-name">Shekhawati International Academy</span>
+                    <span class="brand-location">Losal, Sikar, Rajasthan</span>
+                </span>
+            </a>
+            <nav class="site-nav" aria-label="Main navigation">
+                <a href="index.html">Home</a>
+                <a href="about.html" aria-current="page">About</a>
+                <a href="courses.html">Academics</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+        </div>
     </header>
 
-    <!-- Navigation -->
-    <nav aria-label="Main navigation">
-        <a href="index.html">Home</a>
-        <a href="courses.html">Our Courses</a>
-        <a href="about.html" aria-current="page">About Us</a>
-        <a href="contact.html">Contact Us</a>
-    </nav>
+    <main id="main-content">
+        <header class="page-intro">
+            <div class="content-width">
+                <p class="eyebrow">Our story</p>
+                <h1>About Shekhawati International Academy</h1>
+                <p>
+                    Founded in 2008, SIA is a CBSE-affiliated school in Losal,
+                    Sikar, with classes from Nursery to XII.
+                </p>
+            </div>
+        </header>
 
-    <!-- Welcome Section -->
-    <header class="hero">
-        <h1>About Shekhawati International Academy</h1>
-
-        <p>
-            Welcome to SIA Losal, where education, knowledge
-            and values come together to support the growth
-            of every learner.
-        </p>
-
-        <p class="motto">
-            Knowledge • Strength • Compassion
-        </p>
-    </header>
-
-    <main>
-
-        <!-- About School -->
-        <section class="content-section">
-            <h2>Who We Are</h2>
-
-            <p>
-                Shekhawati International Academy (SIA) is located
-                on Sikar Road, Losal, in Sikar district, Rajasthan.
-                Established in 2008, the school aims to develop
-                knowledgeable, thoughtful and responsible students.
-            </p>
-
-            <p>
-                The school emphasizes value-based education by
-                combining academic learning with practical
-                understanding and respect for cultural values.
-                Its goal is to encourage students to learn with
-                curiosity, confidence and a desire to improve.
-            </p>
-        </section>
-
-        <!-- Vision and Mission -->
-        <section class="content-section">
-            <h2>Our Vision</h2>
-
-            <p>
-                To help students grow into confident, independent
-                and responsible individuals who can contribute
-                positively to society.
-            </p>
-
-            <h2>Our Educational Goals</h2>
-
-            <ul>
-                <li>Encourage curiosity and independent learning.</li>
-                <li>Develop academic knowledge and practical skills.</li>
-                <li>Promote honesty, respect and compassion.</li>
-                <li>Support intellectual, social and physical growth.</li>
-                <li>Encourage teamwork and healthy competition.</li>
-            </ul>
-        </section>
-
-        <!-- School Highlights -->
-        <section class="content-section">
-            <h2>What Makes SIA Special?</h2>
-
-            <div class="highlights">
-
-                <article class="highlight-card">
-                    <h3>Academic Learning</h3>
+        <section class="section">
+            <div class="content-width story-grid">
+                <div class="prose">
+                    <p class="eyebrow">Education sets one free</p>
+                    <h2>Curiosity, confidence, and community.</h2>
                     <p>
-                        Learning opportunities designed to build
-                        subject knowledge and understanding.
+                        SIA's official about page describes an approach that
+                        balances practical and theoretical teaching and
+                        encourages students to seek knowledge with curiosity.
+                        The school says its education is rooted in cultural
+                        heritage and value-based learning.
                     </p>
-                </article>
-
-                <article class="highlight-card">
-                    <h3>Values and Character</h3>
                     <p>
-                        Encouraging honesty, responsibility,
-                        respect and compassion in everyday life.
+                        Its motto, “Knowledge Strength Compassion,” reflects
+                        the school's stated commitment to academic excellence,
+                        extracurricular activities, and students' overall
+                        development.
                     </p>
-                </article>
-
-                <article class="highlight-card">
-                    <h3>Overall Development</h3>
                     <p>
-                        Supporting students' intellectual,
-                        social and physical development through
-                        learning and activities.
+                        SIA is affiliated with the Central Board of Secondary
+                        Education for the All India Secondary and Senior
+                        Secondary Examinations.
                     </p>
-                </article>
-
+                </div>
+                <figure class="story-figure">
+                    <img
+                        class="story-image"
+                        src="images/sia-campus-building.jpg"
+                        alt="Shekhawati International Academy campus in Losal"
+                        loading="lazy"
+                    >
+                    <figcaption>School campus in Losal. Photo: official SIA website.</figcaption>
+                </figure>
             </div>
         </section>
 
-        <!-- School Information -->
-        <section class="content-section">
-            <h2>School Information</h2>
-
-            <div style="overflow-x: auto;">
-                <table class="school-info">
-                    <tbody>
-                        <tr>
-                            <th scope="row">School Name</th>
-                            <td>Shekhawati International Academy</td>
-                        </tr>
-
-                        <tr>
-                            <th scope="row">Established</th>
-                            <td>2008</td>
-                        </tr>
-
-                        <tr>
-                            <th scope="row">Location</th>
-                            <td>Sikar Road, Losal, Sikar, Rajasthan</td>
-                        </tr>
-
-                        <tr>
-                            <th scope="row">Education Board</th>
-                            <td>Central Board of Secondary Education (CBSE)</td>
-                        </tr>
-
-                        <tr>
-                            <th scope="row">Classes</th>
-                            <td>Nursery to Class XII</td>
-                        </tr>
-
-                        <tr>
-                            <th scope="row">School Motto</th>
-                            <td>Knowledge, Strength, Compassion</td>
-                        </tr>
-                    </tbody>
-                </table>
+        <section class="section section-alt">
+            <div class="content-width">
+                <div class="section-heading">
+                    <p class="eyebrow">At a glance</p>
+                    <h2>A school community in Losal.</h2>
+                    <p>Key details published by Shekhawati International Academy.</p>
+                </div>
+                <div class="card-grid">
+                    <article class="card">
+                        <span class="card-label">Established</span>
+                        <h3>Founded in 2008</h3>
+                        <p>SIA was founded to develop thoughtful, aspirational learners.</p>
+                    </article>
+                    <article class="card">
+                        <span class="card-label">Education</span>
+                        <h3>CBSE-affiliated</h3>
+                        <p>The school is affiliated for the All India Secondary and Senior Secondary Examinations.</p>
+                    </article>
+                    <article class="card">
+                        <span class="card-label">Location</span>
+                        <h3>Losal, Sikar</h3>
+                        <p>Shekhawati International Academy is on Sikar Road, Losal, Rajasthan.</p>
+                    </article>
+                </div>
             </div>
         </section>
 
-        <!-- Contact Call to Action -->
-        <section class="content-section">
-            <h2>Be a Part of SIA</h2>
-
-            <p>
-                Would you like to know more about our school,
-                classes or admission process? Visit our courses
-                page or contact the school for further information.
-            </p>
-
-            <a href="courses.html" class="learn-more">
-                Explore Our Courses
-            </a>
-
-            <a href="contact.html" class="learn-more">
-                Contact Us
-            </a>
+        <section class="section">
+            <div class="content-width callout">
+                <h2>Learn more about the school.</h2>
+                <p>For the latest admissions information or details about classes, please contact SIA directly.</p>
+                <a class="button" href="contact.html">Contact SIA</a>
+            </div>
         </section>
-
     </main>
 
-    <!-- Footer -->
-    <footer>
-        <p>
-            &copy; 2026 Shekhawati International Academy, Losal.
-        </p>
-
-        <p>
-            <a href="index.html">Home</a> |
-            <a href="courses.html">Courses</a> |
-            <a href="contact.html">Contact Us</a>
-        </p>
-
-        <p>
-            <a href="https://shekhawatilosal.com/pages/about-us"
-               target="_blank"
-               rel="noopener noreferrer">
-                Official School Website
-            </a>
-        </p>
+    <footer class="site-footer">
+        <div class="footer-inner">
+            <p>&copy; <span data-current-year>2026</span> Shekhawati International Academy, Losal.</p>
+            <div class="footer-links">
+                <a href="index.html">Home</a>
+                <a href="courses.html">Academics</a>
+                <a href="contact.html">Contact</a>
+                <a class="external-source" href="https://shekhawatilosal.com/pages/about-us" target="_blank" rel="noopener noreferrer">Official about page</a>
+            </div>
+        </div>
     </footer>
-
 </body>
 </html>
